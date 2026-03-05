@@ -59,17 +59,23 @@ body > .container {
 /* všechny boxy s perexem článku jsou stejně široké */
 /* nemělo by se stát, že červená šipka v bílém kroužku překryje text perexu */ 
 .news-item__article {
-    
+    flex-grow: 1;
+    order: 3;
+    display: flex;
+    gap: 1rem;
 }
 
 .news-item__image-link {
+    flex-shrink: 1;
 }
 
 .news-item__content {
+    padding-right: 2.5rem;
 }
 
 /* všechny odkazy vizuálně reagují na přejetí myší */
 .news-item__title-link:hover {
+    color: var(--color-hover-title);
 }
 
 .news-item__category-link:hover {
